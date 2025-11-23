@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Holiday 7 Zlatibor</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root { --accent: #f5f2e9; --secondary: #fff; --light-gray: #d6d6d6; --star-gold: #d4af37; }
+  body { margin: 0; font-family: 'Montserrat', sans-serif; background-color: #000; color: var(--secondary); }
+  header { display: flex; justify-content: space-between; align-items: center; padding: 20px; }
+  header a { color: var(--secondary); text-decoration: none; margin: 0 15px; font-weight: 400; font-size: 22px; }
+  header a:hover { color: var(--accent); }
+  .hero { text-align: center; padding: 80px 20px; background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover no-repeat; }
+  .hero h1 { font-size: 50px; margin: 0; font-weight: 800; }
+  .hero h1 .number { color: #d4af37; font-size: 125%; }
+  .hero p { font-size: 20px; margin-top: 10px; color: #d6d6d6; }
+
+  .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; padding: 40px 20px; max-width: 1100px; margin: auto; }
+  .gallery img { width: 100%; border-radius: 10px; transition: transform 0.3s ease; }
+  .gallery img:hover { transform: scale(1.05); }
+
+  #amenities { padding: 60px 20px 120px 20px; text-align:center; margin-top:30px; }
+  #amenities h2 { margin-bottom:30px; font-size:32px; }
+  .amenities-grid { display:grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: auto; gap: 65px; max-width:900px; margin:auto; position:relative; }
+  .amenity-item { display:flex; flex-direction:column; align-items:center; gap:10px; font-size:23px; }
+  .amenity-item img { width:65px; filter:invert(100%); }
+  .amenity-item.zig-lower1 { position:absolute; top:150px; left:28%; }
+  .amenity-item.zig-lower2 { position:absolute; top:150px; left:63%; }
+
+  #reviews { padding:60px 20px 40px 20px; text-align:center; margin-top:70px; }
+  #reviews h2 { margin-bottom:25px; }
+  .reviews-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:20px; max-width:900px; margin:auto; }
+  .review { background:#111; padding:20px; border-radius:10px; color: var(--light-gray); }
+  .stars { color: var(--star-gold); margin-bottom:8px; }
+
+  footer { background: #0a0a0a; padding: 30px 20px; }
+  .footer-content { display: flex; justify-content: space-between; align-items: center; max-width: 1100px; margin: auto; flex-wrap: wrap; gap: 20px; }
+  .footer-left, .footer-center, .footer-right { display:flex; flex-direction:column; align-items:center; flex:1; }
+  .footer-left { align-items:flex-start; }
+  .footer-right { align-items:flex-end; }
+  .footer-center { flex-direction:row; justify-content:center; }
+  .footer-center img { width: 36px; height: 36px; filter: brightness(0) saturate(100%) invert(86%) sepia(8%) saturate(351%) hue-rotate(359deg) brightness(96%) contrast(90%); margin: 0 8px; }
+  .footer-left a { color: var(--accent); text-decoration: none; }
+  .contact-row { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+  .contact-row svg { width: 20px; height: 20px; fill: var(--secondary); }
+  .contact-row a, .contact-row span { color: var(--secondary); text-decoration: none; }
+
+  @media (max-width: 800px) {
+    header { flex-direction: column; text-align: center; }
+    .footer-content { flex-direction: column; text-align: center; }
+    .amenities-grid { display:flex; flex-direction:column; gap:30px; position:static; }
+    .amenity-item.zig-lower1, .amenity-item.zig-lower2 { position:static; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <a href="#" style="font-size: 32px; font-weight: 800; color: var(--secondary); text-decoration:none;">Holiday <span class="number" style="color:#d4af37">7</span> Zlatibor</a>
+  <nav>
+    <a href="#gallery">Galerija</a>
+    <a href="#reservation">Rezervacija</a>
+  </nav>
+</header>
+<section class="hero">
+  <h1>Holiday <span class="number">7</span> Zlatibor</h1>
+  <p>Moderan smeštaj sa stilom i komforom u srcu Zlatibora</p>
+</section>
+<section id="gallery" class="gallery">
+  <img src="https://www.dropbox.com/scl/fi/b9npclige8z68rmhya1j2/TV.jpg?rlkey=0bk7389maih4q1o05eth6rmac&st=vo8r9an3&dl=0" alt="TV.jpg">
+  <img src="https://www.dropbox.com/scl/fi/jh2hwrm2zr4lzshf9cpoq/Terasa.jpg?rlkey=ssqfzx5ichwyocsrk2x1cke80&st=g1nxl11d&dl=0" alt="Terasa.jpg">
+  <img src="https://www.dropbox.com/scl/fi/u5jmm7ryq138ucv3s8lol/Sto.jpg?rlkey=s8e6ixh0qxuhbxcvrsbh2673x&st=3g3vkt93&dl=0" alt="Sto.jpg">
+  <img src="https://www.dropbox.com/scl/fi/kq0hnkm8ymxwnwmn9atag/Krevet.jpg?rlkey=5x8pyvmzn454bcgk5kns8wizv&st=5x0wa92p&dl=0" alt="Krevet.jpg">
+</section>
+<section id="amenities">
+  <h2>Dostupno u apartmanu</h2>
+  <div class="amenities-grid">
+    <div class="amenity-item"><div style="font-size:65px;">📶</div><span>WiFi</span></div>
+    <div class="amenity-item"><div style="font-size:65px;">🛁</div><span>Wellness & Spa</span></div>
+    <div class="amenity-item"><div style="font-size:65px;">📺</div><span>Smart TV</span></div>
+    <div class="amenity-item zig-lower1"><div style="font-size:65px;">♨</div><span>Sauna</span></div>
+    <div class="amenity-item zig-lower2"><div style="font-size:65px;">🅿️</div><span>Privatan Parking</span></div>
+  </div>
+</section>
+<section id="reviews">
+  <h2>Recenzije ★</h2>
+  <div class="reviews-grid">
+    <div class="review"><div class="stars">★★★★★</div>"Prelep apartman, sve čisto i domaćini divni!" – Milica</div>
+    <div class="review"><div class="stars">★★★★★</div>"Lokacija savršena, krevet udoban, parking obezbeđen." – Marko</div>
+    <div class="review"><div class="stars">★★★★★</div>"Vratili bismo se ponovo, sve preporuke!" – Jovana</div>
+  </div>
+</section>
+<footer>
+  <div class="footer-content">
+    <div class="footer-left">
+      <h4>Adresa</h4>
+      <a href="https://www.google.com/maps/place/Holiday7zlatibor/@43.7298193,19.7193393,831m/data=!3m2!1e3!4b1!4m6!3m5!1s0x47582f002f3262d3:0xe8e2ae33857d09de!8m2!3d43.7298193!4d19.7219142!16s%2Fg%2F11y8p6hsjd?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D">Vlastimira Pavlovića BB, Zlatibor</a>
+    </div>
+    <div class="footer-center">
+      <a href="https://instagram.com/holiday7zlatibor" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram"></a>
+      <a href="https://www.tiktok.com/@holiday.7.zlatibor?_r=1&_t=ZM-91arPPBmvxD" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046120.png" alt="TikTok"></a>
+    </div>
+    <div class="footer-right">
+      <div class="contact-row">
+        <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.72 11.72 0 003.57.57 1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.01l-2.21 2.21z"/></svg>
+        <a href="tel:0643136029">064/313-6029</a>
+      </div>
+      <div class="contact-row">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        <a href="mailto:holiday7zlatibor@gmail.com">holiday7zlatibor@gmail.com</a>
+      </div>
+      <div class="contact-row">
+        <svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v2h20v-2c0-3.3-6.7-5-10-5z"/></svg>
+        <span>Gordana Šimišić</span>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
+
